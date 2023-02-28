@@ -8,8 +8,8 @@ export interface PopularResponse extends Popular {
   id: number;
   title: string;
   overview: string;
-  page: number;
-  total_results: number;
-  total_pages: number;
+  release_date: string;
+  runtime: number;
+  backdrop_path: string;
   results: Popular[];
 }

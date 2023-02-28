@@ -16,9 +16,8 @@ export const Title = styled.h1`
   font-size: 3rem;
 `;
 export const HeroImage = styled.img`
-  position: relative;
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   object-fit: cover;
-  filter: brightness(20%);
+  filter: brightness(40%);
 `;
