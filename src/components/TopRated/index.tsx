@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { PopularResponse } from "../../models/popular";
+import { MoviesResponse } from "../../models/movies";
 import { getTopRatedMovies, image_path } from "../../services";
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { Container, SectionTitle } from "./styles";
 
 const TopRated = () => {
-  const [movie, setMovie] = useState<PopularResponse>();
+  const [movie, setMovie] = useState<MoviesResponse>();
 
   useEffect(() => {
     const getTopRated = () =>

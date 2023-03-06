@@ -6,7 +6,7 @@ export const Container = styled.div`
 
   img {
     width: 10rem;
-    border-radius: 0.3rem;
+    border-radius: 1rem;
   }
 
   .swiper-slide {

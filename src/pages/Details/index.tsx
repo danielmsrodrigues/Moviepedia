@@ -1,18 +1,16 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { PopularResponse } from "../../models/popular";
+import { MoviesResponse } from "../../models/movies";
 import { getMovieDetails, image_path } from "../../services";
 import { Container, MovieDetails, MovieInfo } from "./styles";
-import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import { BsClockHistory, BsCalendarDate } from "react-icons/bs";
 import Similar from "../../components/Similar";
-import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Details = () => {
   const { id } = useParams();
-  const [movie, setMovie] = useState<PopularResponse>();
+  const [movie, setMovie] = useState<MoviesResponse>();
 
   useEffect(() => {
     getMovieDetails(id ?? "").then((data) => {
@@ -25,6 +23,7 @@ const Details = () => {
   const handleGoBack = () => {
     navigate(-1);
   };
+
   return (
     <>
       <Header />
@@ -47,7 +46,6 @@ const Details = () => {
         )}
       </Container>
       <Similar />
-      <Footer />
     </>
   );
 };

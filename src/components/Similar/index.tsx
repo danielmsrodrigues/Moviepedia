@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getSimilarMovies, image_path } from "../../services";
-import { PopularResponse } from "../../models/popular";
+import { MoviesResponse } from "../../models/movies";
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,7 +11,7 @@ import { Container, Title } from "./styles";
 
 const Similar = () => {
   const { id } = useParams();
-  const [movie, setMovie] = useState<PopularResponse>();
+  const [movie, setMovie] = useState<MoviesResponse>();
 
   useEffect(() => {
     getSimilarMovies(id ?? "").then((data) => {

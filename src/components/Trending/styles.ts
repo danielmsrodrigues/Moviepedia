@@ -4,6 +4,7 @@ export const Container = styled.div`
   padding: 0 2rem;
 
   img {
+    position: relative;
     width: 10rem;
     border-radius: 1rem;
   }
