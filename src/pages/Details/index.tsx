@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { MoviesResponse } from "../../models/movies";
 import { getMovieDetails, image_path } from "../../services";
-import { Container, MovieDetails, MovieInfo } from "./styles";
+import { Container, GoBack, MovieDetails, MovieInfo } from "./styles";
 import Header from "../../components/Header";
 import { BsClockHistory, BsCalendarDate } from "react-icons/bs";
 import Similar from "../../components/Similar";
@@ -30,17 +30,27 @@ const Details = () => {
       <Container>
         {movie && (
           <MovieInfo>
-            <img src={`${image_path}${movie.poster_path}`} alt={movie.title} />
+            <img
+              src={`${image_path}${movie.poster_path}`}
+              alt={movie.title}
+              onError={(e: any) => {
+                e.target.src = require("../../assets/movie-poster-placeholder.png");
+              }}
+            />
             <MovieDetails>
               <h2>{movie.title}</h2>
               <p>{movie.overview}</p>
               <p>
-                <BsClockHistory /> {movie.runtime}m
+                <BsClockHistory />{" "}
+                {movie.runtime ? `${movie.runtime}m` : "No runtime available."}
               </p>
               <span>
-                <BsCalendarDate /> {movie.release_date}
+                <BsCalendarDate />{" "}
+                {movie.release_date
+                  ? movie.release_date
+                  : "No release date available."}
               </span>
-              <button onClick={handleGoBack}>Go Back</button>
+              <GoBack onClick={handleGoBack}>Go Back</GoBack>
             </MovieDetails>
           </MovieInfo>
         )}

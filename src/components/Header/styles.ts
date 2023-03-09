@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   height: 100%;
   padding: 0 2rem;
-  background-color: #0f0f0f;
+  background-color: ${(props) => props.theme.colors.primary};
 `;
 
 export const Logo = styled.h1`

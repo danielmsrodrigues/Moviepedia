@@ -16,25 +16,26 @@ export const MovieInfo = styled.div`
 `;
 
 export const MovieDetails = styled.div`
+  color: ${(props) => props.theme.colors.text.primary};
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 4rem;
   max-width: 50%;
+`;
 
-  button {
-    background: #6654da;
-    border: none;
-    cursor: pointer;
-    border-radius: 1rem;
-    color: white;
-    padding: 0.8rem 2rem;
-    margin-top: 1rem;
-    font-size: 100%;
-    transition: all 0.3s;
-  }
+export const GoBack = styled.button`
+  background: ${(props) => props.theme.colors.primary};
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  color: white;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  font-size: 100%;
+  transition: all 0.3s;
 
-  button:hover {
-    background: #5848c2;
+  :hover {
+    background: #25193e;
   }
 `;

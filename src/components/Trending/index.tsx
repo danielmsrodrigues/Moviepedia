@@ -34,6 +34,9 @@ const Trending = () => {
                   <img
                     src={`${image_path}${movie.poster_path}`}
                     alt={movie.title}
+                    onError={(e: any) => {
+                      e.target.src = require("../../assets/movie-poster-placeholder.png");
+                    }}
                   />
                 </Link>
               </SwiperSlide>

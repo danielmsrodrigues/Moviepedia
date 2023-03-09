@@ -23,7 +23,7 @@ const Similar = () => {
     <>
       <Container>
         <Title>Similar Movies</Title>
-        {movie && (
+        {movie && movie.results.length > 0 ? (
           <Swiper
             grabCursor={true}
             spaceBetween={5}
@@ -37,11 +37,16 @@ const Similar = () => {
                   <img
                     src={`${image_path}${movie.poster_path}`}
                     alt={movie.title}
+                    onError={(e: any) => {
+                      e.target.src = require("../../assets/movie-poster-placeholder.png");
+                    }}
                   />
                 </Link>
               </SwiperSlide>
             ))}
           </Swiper>
+        ) : (
+          <p>No similar movies where found.</p>
         )}
       </Container>
     </>

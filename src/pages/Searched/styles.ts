@@ -30,9 +30,22 @@ export const Container = styled.div`
 
   a {
     text-decoration: none;
-    color: black;
+    color: ${(props) => props.theme.colors.text.primary};
     font-weight: bold;
     font-size: 1.1rem;
     text-align: center;
   }
+`;
+
+export const ErrorContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+`;
+
+export const ErrorMsg = styled.p`
+  text-align: center;
+  font-size: 2rem;
 `;

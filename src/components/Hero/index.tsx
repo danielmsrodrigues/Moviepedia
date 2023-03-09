@@ -16,20 +16,20 @@ const Hero = () => {
       >
         <SwiperSlide>
           <HeroImage
-            src="https://blog.br.playstation.com/tachyon/sites/4/2022/06/c50ed40ccbee94460e55dee40a077efc09474a20.jpg"
-            alt="Hero"
+            src={require("../../assets/spider-man.jpg")}
+            alt="Spider-man"
           />
         </SwiperSlide>
         <SwiperSlide>
           <HeroImage
-            src="https://images6.alphacoders.com/650/thumb-1920-650608.jpg"
-            alt="Hero"
+            src={require("../../assets/forrest-gump.jpg")}
+            alt="Forrest Gump"
           />
         </SwiperSlide>
         <SwiperSlide>
           <HeroImage
-            src="https://wallpaperaccess.com/full/218743.jpg"
-            alt="Hero"
+            src={require("../../assets/black-panther.jpg")}
+            alt="Black Panther"
           />
         </SwiperSlide>
       </Swiper>

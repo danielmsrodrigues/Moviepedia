@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   padding: 0 2rem;
   margin-top: 2rem;
+  color: ${(props) => props.theme.colors.text.primary};
 
   img {
     width: 10rem;
@@ -19,7 +20,7 @@ export const Container = styled.div`
 
   .swiper-button-prev,
   .swiper-button-next {
-    color: #fff;
+    color: ${(props) => props.theme.colors.text.primary};
     padding: 30px;
   }
 `;

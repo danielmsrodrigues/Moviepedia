@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { Logo } from "./styles";
 import ThemeBtn from "../ThemeBtn";
 import SearchBar from "../SearchBar";
-import { useState, useEffect } from "react";
-import { searchMovies } from "../../services";
 
 const Header: React.FC = () => {
   return (
