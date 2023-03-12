@@ -38,8 +38,10 @@ const Details = () => {
               }}
             />
             <MovieDetails>
-              <h2>{movie.title}</h2>
-              <p>{movie.overview}</p>
+              <h2>{movie.title ? movie.title : "No title available."}</h2>
+              <p>
+                {movie.overview ? movie.overview : "No overview available."}
+              </p>
               <p>
                 <BsClockHistory />{" "}
                 {movie.runtime ? `${movie.runtime}m` : "No runtime available."}
