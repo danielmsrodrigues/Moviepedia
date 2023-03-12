@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3dc5aaff.css",
+    "main.js": "/static/js/main.b50c352f.js",
+    "static/media/spider-man.jpg": "/static/media/spider-man.6723af03623cce21ed65.jpg",
+    "static/media/forrest-gump.jpg": "/static/media/forrest-gump.781b580533aa04bba432.jpg",
+    "static/media/black-panther.jpg": "/static/media/black-panther.afaa1283f6914701c48d.jpg",
+    "index.html": "/index.html",
+    "main.3dc5aaff.css.map": "/static/css/main.3dc5aaff.css.map",
+    "main.b50c352f.js.map": "/static/js/main.b50c352f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3dc5aaff.css",
+    "static/js/main.b50c352f.js"
+  ]
+}
