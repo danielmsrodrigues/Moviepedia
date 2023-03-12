@@ -5,27 +5,32 @@ import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Searched from "../pages/Searched";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "/details/:id",
+          element: <Details />,
+        },
+        {
+          path: "/searched/:query",
+          element: <Searched />,
+        },
+        {
+          path: "*",
+          element: <ErrorPage />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "/details/:id",
-        element: <Details />,
-      },
-      {
-        path: "/searched/:query",
-        element: <Searched />,
-      },
-      {
-        path: "*",
-        element: <ErrorPage />,
-      },
-    ],
-  },
-]);
+    basename: "/moviepedia",
+  }
+);

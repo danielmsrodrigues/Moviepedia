@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3dc5aaff.css",
-    "main.js": "/static/js/main.b50c352f.js",
-    "static/media/spider-man.jpg": "/static/media/spider-man.6723af03623cce21ed65.jpg",
-    "static/media/forrest-gump.jpg": "/static/media/forrest-gump.781b580533aa04bba432.jpg",
-    "static/media/black-panther.jpg": "/static/media/black-panther.afaa1283f6914701c48d.jpg",
-    "index.html": "/index.html",
-    "main.3dc5aaff.css.map": "/static/css/main.3dc5aaff.css.map",
-    "main.b50c352f.js.map": "/static/js/main.b50c352f.js.map"
+    "main.css": "/moviepedia/static/css/main.3dc5aaff.css",
+    "main.js": "/moviepedia/static/js/main.2c92a431.js",
+    "static/media/spider-man.jpg": "/moviepedia/static/media/spider-man.6723af03623cce21ed65.jpg",
+    "static/media/forrest-gump.jpg": "/moviepedia/static/media/forrest-gump.781b580533aa04bba432.jpg",
+    "static/media/black-panther.jpg": "/moviepedia/static/media/black-panther.afaa1283f6914701c48d.jpg",
+    "index.html": "/moviepedia/index.html",
+    "main.3dc5aaff.css.map": "/moviepedia/static/css/main.3dc5aaff.css.map",
+    "main.2c92a431.js.map": "/moviepedia/static/js/main.2c92a431.js.map"
   },
   "entrypoints": [
     "static/css/main.3dc5aaff.css",
-    "static/js/main.b50c352f.js"
+    "static/js/main.2c92a431.js"
   ]
 }
