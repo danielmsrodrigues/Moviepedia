@@ -4,7 +4,7 @@ import { Logo } from "./styles";
 import ThemeBtn from "../ThemeBtn";
 import SearchBar from "../SearchBar";
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <Container>
       <Logo>
