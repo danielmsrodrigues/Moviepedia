@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Details from "../pages/Details";
+import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Searched from "../pages/Searched";
 
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: "/searched/:query",
         element: <Searched />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },

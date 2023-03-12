@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Header from "../../components/Header";
 import { image_path, searchMovies } from "../../services";
-import { Container, ErrorContainer, ErrorMsg } from "./styles";
+import {
+  Container,
+  ErrorContainer,
+  ErrorMsg,
+  Movie,
+  MovieList,
+} from "./styles";
 
 const Searched = () => {
   const { query } = useParams();
@@ -20,9 +26,9 @@ const Searched = () => {
       <Header />
       <Container>
         {movie.length > 0 ? (
-          <ul>
+          <MovieList>
             {movie.map((movie) => (
-              <li key={movie.id}>
+              <Movie key={movie.id}>
                 <Link to={`/details/${movie.id}`}>
                   <img
                     src={`${image_path}${movie.poster_path}`}
@@ -35,9 +41,9 @@ const Searched = () => {
                   />
                   <p>{movie.title}</p>
                 </Link>
-              </li>
+              </Movie>
             ))}
-          </ul>
+          </MovieList>
         ) : (
           <ErrorContainer>
             <ErrorMsg>No movie with that name was found.</ErrorMsg>

@@ -46,7 +46,7 @@ const Similar = () => {
             ))}
           </Swiper>
         ) : (
-          <p>No similar movies where found.</p>
+          <p>No similar movies were found.</p>
         )}
       </Container>
     </>

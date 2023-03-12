@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { Link } from "react-router-dom";
-import { Container, SectionTitle } from "./styles";
+import { Container, SectionTitle, TrendingImage } from "./styles";
 
 const Trending = () => {
   const [movie, setMovie] = useState<MoviesResponse>();
@@ -31,7 +31,7 @@ const Trending = () => {
             {movie.results.map((movie) => (
               <SwiperSlide key={movie.id}>
                 <Link to={`/details/${movie.id}`}>
-                  <img
+                  <TrendingImage
                     src={`${image_path}${movie.poster_path}`}
                     alt={movie.title}
                     onError={(e: any) => {

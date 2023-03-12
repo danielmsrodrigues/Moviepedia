@@ -25,6 +25,18 @@ export const Container = styled.div`
   }
 `;
 
+export const TrendingImage = styled.img`
+  img {
+    position: relative;
+    width: 10rem;
+    border-radius: 1rem;
+  }
+
+  img:hover {
+    filter: brightness(80%);
+  }
+`;
+
 export const SectionTitle = styled.h2`
   margin: 1rem 0;
   font-size: 1.7rem;

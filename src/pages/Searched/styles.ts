@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin-top: 2rem;
+`;
 
-  ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 1rem;
-    row-gap: 2rem;
-  }
+export const MovieList = styled.ul`
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 1rem;
+  row-gap: 2rem;
+`;
 
-  li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+export const Movie = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   img {
     width: 11rem;
@@ -48,4 +48,5 @@ export const ErrorContainer = styled.div`
 export const ErrorMsg = styled.p`
   text-align: center;
   font-size: 2rem;
+  color: ${(props) => props.theme.colors.text.primary};
 `;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin-top: 8rem;
-
   img {
     width: 300px;
     border-radius: 1rem;
