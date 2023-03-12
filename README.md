@@ -6,4 +6,5 @@ https://user-images.githubusercontent.com/116307758/224581287-1496a381-061f-46da
 <br/>
 
 This project was made during my Web Development course at ETIC.
+<br/>
 You can find it live [here](https://danielmsrodrigues.github.io/moviepedia).
