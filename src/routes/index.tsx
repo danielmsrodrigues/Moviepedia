@@ -31,6 +31,6 @@ export const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/moviepedia",
+    basename: "/Moviepedia",
   }
 );
