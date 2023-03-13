@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Daniel Rodrigues",
   "private": true,
-  "homepage": "https://danielmsrodrigues.github.io/moviepedia/",
+  "homepage": "https://danielmsrodrigues.github.io/Moviepedia/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
